@@ -1,6 +1,6 @@
 # React News PWA 📰
 
-> React News PWA example using News API
+> React News PWA example using News API <br>
 > Live Demo : https://react-news-pwa.herokuapp.com
 
 ## Build Setup
