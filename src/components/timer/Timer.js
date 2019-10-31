@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 // Styles
 import "./Timer.scss";
 
-function Timer({seconds, isFinished}) {
+function Timer({ seconds, isFinished }) {
   const [count, setCount] = useState(+seconds);
 
   useEffect(() => {

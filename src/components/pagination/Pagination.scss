@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  li {
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style: none;
+  }
+  &__pager {
+    height: 35px;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #333;
+    &--number {
+      width: 35px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &--active {
+      background-color: #e3e3e3;
+      font-weight: 500;
+    }
+  }
+}
