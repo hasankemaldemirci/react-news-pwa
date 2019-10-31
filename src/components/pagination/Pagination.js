@@ -21,37 +21,29 @@ function Pagination({ totalResults, currentPage, paginate, pageSize }) {
   return (
     <ul className="pagination">
       {currentPage > 1 && (
-        <li>
-          <button
-            className="pagination__pager "
-            onClick={() => paginate(currentPage - 1)}
-          >
+        <li className="pagination__pager">
+          <button onClick={() => paginate(currentPage - 1)}>
             Önceki Sayfa
           </button>
         </li>
       )}
       {pageNumbers.map((page, index) => {
         return (
-          <li key={index}>
-            <button
-              className={
-                currentPage === page
-                  ? "pagination__pager pagination__pager--number pagination__pager--active"
-                  : "pagination__pager pagination__pager--number"
-              }
-              onClick={() => paginate(page)}
-            >
-              {page}
-            </button>
+          <li
+            key={index}
+            className={
+              currentPage === page
+                ? "pagination__pager pagination__pager--number pagination__pager--active"
+                : "pagination__pager pagination__pager--number"
+            }
+          >
+            <button onClick={() => paginate(page)}>{page}</button>
           </li>
         );
       })}
       {currentPage < pageNumbers.length && (
-        <li>
-          <button
-            className="pagination__pager"
-            onClick={() => paginate(currentPage + 1)}
-          >
+        <li className="pagination__pager">
+          <button onClick={() => paginate(currentPage + 1)}>
             Sonraki Sayfa
           </button>
         </li>
