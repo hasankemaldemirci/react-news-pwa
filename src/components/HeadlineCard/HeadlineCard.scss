@@ -1,0 +1,47 @@
+.headlines-list__card {
+  display: flex;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e3e3e3;
+  figure {
+    flex: 0 0 150px;
+    max-width: 150px;
+    margin: 0 15px 0 0;
+    border-radius: 3px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    .body {
+      a {
+        font-weight: 500;
+      }
+    }
+    .tools {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+      color: #666;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    figure {
+      flex: 1;
+      max-width: 100%;
+      margin-right: 0;
+    }
+    figcaption {
+      margin-top: 10px;
+      .tools {
+        font-size: 13px;
+      }
+    }
+  }
+}

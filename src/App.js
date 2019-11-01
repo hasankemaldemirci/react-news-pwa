@@ -1,9 +1,9 @@
 import React from "react";
 
 // Components
-import Header from "./components/header/Header"
-import Headlines from "./components/headlines/Headlines"
-import Footer from "./components/footer/Footer"
+import Header from "./components/Header/Header"
+import Headlines from "./components/Headlines/Headlines"
+import Footer from "./components/Footer/Footer"
 
 // Styles
 import "./App.scss";

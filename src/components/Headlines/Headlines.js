@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { fetchAPI } from "../../app/api";
 
 // Components
-import HeadlineCard from "../headline-card/HeadlineCard";
-import Loader from "../loader/Loader";
-import Timer from "../timer/Timer";
-import Pagination from "../pagination/Pagination";
+import HeadlineCard from "../HeadlineCard/HeadlineCard";
+import Loader from "../Loader/Loader";
+import Timer from "../Timer/Timer";
+import Pagination from "../Pagination/Pagination";
 
 // Styles
 import "./Headlines.scss";
