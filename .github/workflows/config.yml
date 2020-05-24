@@ -5,9 +5,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ react-news-pwa ]
   pull_request:
-    branches: [ master ]
+    branches: [ react-news-pwa ]
 
 jobs:
   test:
